@@ -1,10 +1,7 @@
 package org.example.service;
 
-import org.example.App;
 import org.example.dao.UserDao;
-import org.example.dao.UserDaoImpl;
 import org.example.model.User;
-import org.example.util.HibernateUtil;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,6 +16,9 @@ public class UserService {
 
     public UserService(UserDao userDao, Scanner scanner){
         this.userDao = userDao;
+        this.scanner = scanner;
+    }
+    public void setScanner(Scanner scanner){
         this.scanner = scanner;
     }
     public void run(){
