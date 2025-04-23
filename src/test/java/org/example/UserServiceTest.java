@@ -121,13 +121,13 @@ public class UserServiceTest{
     @Test
     public void find_user_by_correct_id_is_successful(){
         User testUser = new User("TestF", "testF@test.ru", 43);
+        testUser.setId(1);
         String input = "3\n1\n6";
 
-        testUser.setId(1);
         when(userDaoMock.findById(1)).thenReturn(Optional.of(testUser));
         userService.setScanner(createScanner(input));
         userService.run();
-        assertTrue(outputStream.toString().contains("User found"));
+        assertTrue(outputStream.toString().contains("User found:"));
         verify(userDaoMock, times(1)).findById(1);
     }
     @Test

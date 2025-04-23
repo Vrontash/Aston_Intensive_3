@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Java_Intensive_3</artifactId>
+  <artifactId>Aston_Intensive_3</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -29,15 +29,20 @@
       <version>5.17.0</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testcontainers/junit-jupiter -->
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>1.20.6</version>
+      <scope>test</scope>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/org.testcontainers/postgresql -->
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>postgresql</artifactId>
-      <version>1.20.4</version>
+      <version>1.20.6</version>
       <scope>test</scope>
     </dependency>
-
-
 
     <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
     <dependency>
